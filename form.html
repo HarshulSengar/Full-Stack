@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form In Html</h1>
+    <form action="backend.js"><!--here after submission whole data is sent to backend or it like destination where fulldats is sent-->
+        <fieldset>
+            <legend>Personal Details</legend>
+        <div>
+            <label for="name"> Name: </label>
+            <input type="text" placeholder="Enter The Name" id = "name" name="naam"><!--yha jin fields par name attribute h sirf wahi backend pr ja skte h-->
+            <!-- for and id are used to connect the input and its label if we click on name word here then it automattocaly shift us the input box and we can input the content here -->
+        </div><br>
+
+        <div>
+            <label for="age"> Age: </label>
+            <input type="number" placeholder="Enter The Age" id="age" name="ageeee">
+        </div><br>
+
+        <div>
+            <label for="email"> Email: </label>
+            <input type="email" placeholder="Enter The email" id="email">
+        </div><br>
+
+        <div>
+            <label for="dob"> DOB: </label>
+            <input type="date" placeholder="Enter The DOB" id="dob">
+        </div><br>
+
+        <div>
+            <label for="time"> Time: </label>
+            <input type="time" placeholder="Enter The time" id="time">
+        </div><br>
+
+        <div>
+            <label for="pass"> Password: </label>
+            <input type="password" placeholder="Enter The Password" id="pass">
+        </div><br>
+
+        <div>
+            <label for="file">Upload File</label>
+            <input type="file" id="file">
+        </div><br>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <!-- it is used to select multiple options -->
+            <input type="checkbox" id="gender" name="abcd">Male
+            <input type="checkbox" id="gender" name="abcd">Female
+            <input type="checkbox" id="gender" name="abcd">Other
+        </div><br>
+
+        <div>
+            <label for="sub">Subject:</label>
+            <!-- for choosing one option we use name attribute and give same value to all so that it will choose only one option -->
+            <input type="radio" id="sub" name="abc">English
+            <input type="radio" id="sub" name="abc">Hindi
+            <input type="radio" id="sub" name="abc">Maths
+        </div><br>
+
+        <button type="submit">Submit</button> <!--always use type submit-->
+        <button type="reset">Reset</button>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
