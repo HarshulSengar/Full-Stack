@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<style>
+    h1{
+        /* element selector */
+        color: green;
+        background-color: aquamarine;
+        border:2px solid peru; /* 2px is border width and solid is type of border */
+    }
+    /* universal selctor */
+    *{
+        background-color: black;
+        color: white;
+    }
+    /* class selector to change properties of second h1 tag */
+    .heading1{
+        color: palevioletred;
+        background-color: sienna;
+        border: 2px dotted goldenrod;
+    }
+
+    /* id selector */
+    #green{
+        color: blueviolet;
+    }
+
+    /* group selector : apply same proprty to given tags*/
+    h1 , .heading1 , #green{
+        font-size: 40px;
+    }
+
+</style>
+<body>
+    <h1>Hello World</h1>
+    <h1 class="heading1">Happy India</h1>
+    <h2 class="heading1">Selectors in css</h2> <!--same proprty apply to both same class names-->
+    <h3 id="green">Green Nation</h3> <!--id always be unique-->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+</body>
+</html>

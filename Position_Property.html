@@ -1,0 +1,74 @@
+<!-- static , relative , absolute , fixed , sticky -->
+<!-- by default static -->
+<!-- relative : original position ko origin man leta h or usi ke around move krta h (top , left , right , bottom) -->
+<!-- absolute : element moves around the nearest position ancestor -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            border: 2px solid green;
+            height: 1000px;
+            width: 900px;
+        }
+
+        .container{
+            border: 2px solid yellow;
+            height: 400px;
+            width: 700px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .item1{
+            border: 2px solid pink;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            left: 100px;
+            top: 90px;
+        }
+
+        .item2{
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            bottom: 10px;
+        }
+
+        .item3{
+            border: 2px solid blue;
+            height: 100px;
+            width: 100px;
+            position: fixed;
+            top: 20px;
+        }
+
+        .item4{
+            border: 2px solid purple;
+            height: 100px;
+            width: 100px;
+            position: sticky;
+            top: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- div.main>div.conatiner>div.item -->
+    <div class="main">
+        <div class="container">
+            <div class="item1">This is item 1</div>
+            <div class="item2">This is item 2</div>
+            <div class="item3">This is item 3</div>
+            <div class="item4">This is item 4</div>
+        </div>
+    </div>
+</body>
+</html>

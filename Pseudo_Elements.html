@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line{
+            background-color: aquamarine;
+            color: blue;
+        }
+
+        p::first-letter{
+            font-size: 30px;
+            color: brown;
+        }
+
+        p::selection{ /* on selecting text it give red color on selection not blue */
+            color: red;
+            background-color: bisque;
+        }
+
+        h1::after{
+            content: " Harshul";
+            color: yellowgreen;
+        }
+
+        h1::before{
+            content: "Very ";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum voluptate nulla possimus ratione tenetur accusamus, repellat laborum perferendis aliquid velit ducimus. Fugit debitis nulla temporibus culpa, perferendis rem velit cumque nisi sunt recusandae inventore incidunt soluta ea aliquam beatae harum.</p>
+    <h1>Good Morning</h1>
+</body>
+</html>

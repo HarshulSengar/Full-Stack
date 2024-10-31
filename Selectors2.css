@@ -1,0 +1,40 @@
+/* There are four different combinators in CSS:
+
+descendant selector (space)
+child selector (>)
+adjacent sibling selector (+)
+general sibling selector (~)
+
+*/
+
+/* 1. descendent selector(space) */
+div p{
+    /* it will apply property on line 17 and 19 {jitne paragraph div ke descendent h mtlb div ke andar h*/
+    color: blue;
+}
+
+/* child selector(>) : jitne bhi paragraph given tag ke child h un pr yeh property apply ho jaye */
+div>p{
+    color: red;
+    background-color: aqua;
+}
+
+/* Adjacent Sibling Selector (+) : select an element that is directly after another specific element. */
+h1 + p {
+    color: chocolate; /*it will change color of paragraph which is just after the h1 tag only */
+    background-color: purple;/*apply on adjacent tags which means only on child */
+}
+
+/* General Sibling Selector (~)
+The general sibling selector selects all elements that are next siblings of a specified element.
+
+*/
+
+h1~p{
+    color: pink;
+}
+
+/* attribute selector : read*/
+
+
+

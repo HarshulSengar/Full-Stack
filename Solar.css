@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    height : 100vh;
+    width: 100vw;
+}
+
+.sun{
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(to left , rgb(255, 225, 0),orange);
+}
+
+.orbit1{
+    border: 2px solid black;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    animation-name: solar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; /*contiously move */
+    animation-timing-function: linear; /*throghout ek hi speed se maove krega */
+
+}
+
+/* .orbit2{
+    border: 2px solid black;
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+}
+    */
+.planet1{
+    border: 2px solid black; 
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    top: 35px;
+    background-image: linear-gradient(to left , rgb(0, 77, 128),aqua);
+}
+
+@keyframes solar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

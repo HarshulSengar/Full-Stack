@@ -1,0 +1,32 @@
+<!-- relative(vh , vw , % , em , rem , fraction) and absolute(pixel(px)) -->
+<!-- vh(view height / respect of body) -->
+ <!-- % - parent , em - parent , rem -root element(irem = 16px) , fr - body ke respect me -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            border: 3px solid green;
+            height: 50%;/*takes 50% of parent */
+            font-size: 4rem; /*64px */
+            width: 50%;
+        }
+        .container{
+            border: 3px solid red;
+            /* height: 500px;px value is fixed it means it does not change */
+            height: 50vh; 
+            width: 40vh;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="child">
+            hello world
+        </div>
+    </div>
+ </body>
+ </html>
