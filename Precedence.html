@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precedence</title>
+    <style>
+        /* Type selector */
+        p{
+            color :aquamarine; /*This will be overridden by class and ID selectors if applied */
+        }
+
+        /* Class selector */
+        .special{
+            color: brown;/* This will be overridden by the ID selector */
+        }
+
+        /* ID selector */
+        #unique{
+            color: goldenrod;/* This has the highest specificity */
+        }
+
+        /* Inline style example */
+        .inline{
+            color : blueviolet;/* This is an example of an inline style */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, nobis? (type selector)</p>
+    <p class="special">Lorem ipsum dolor sit amet.(class selector)</p>
+    <p id="unique">Lorem ipsum dolor sit amet.(ID selector)</p>
+    <p id="unique" class="special">Lorem ipsum dolor sit amet.(ID selector takes precendence)</p>
+    <p class="inline" style="color: powderblue;">Lorem ipsum dolor sit amet.(Inline style)</p>
+</body>
+</html>

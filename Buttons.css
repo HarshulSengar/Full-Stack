@@ -1,0 +1,94 @@
+/* buttons Designs */
+.basic{
+    background-color: aquamarine;
+    color: palevioletred;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: navy;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.outline{
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 10px 20px;
+}
+
+.rounded{
+    background-color: red;
+    color: beige;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.glow{
+    background-color: palevioletred;
+    color: bisque;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0 0 8px #ffd700;
+}
+
+.button-3D{
+    background-color: lightgreen;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Border-Designs */
+.dotted{
+    border: 4px dotted greenyellow;
+    padding: 10px;
+}
+
+.dashed{
+    border: 3px dashed lightsalmon;
+    padding: 10px;
+}
+
+.double{
+    border: 8px double lightseagreen;
+    padding : 10px;
+}
+
+.groove{
+    border: 5px groove red;
+    padding: 10px;
+}
+
+.inset {
+    border: 6px inset grey;
+    padding: 10px;
+  }
+
+  .outset {
+    border: 6px outset orange;
+    padding: 10px;
+  }
+
+  .ridge {
+    border: 6px ridge brown;
+    padding: 10px;
+  }
+
+  .round {
+    border: 5px solid red;
+    border-radius: 15px;
+    padding: 10px;
+  }
+
+  .thick {
+    border: 10px solid black;
+    padding: 10px;
+  }
+
+

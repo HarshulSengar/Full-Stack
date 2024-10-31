@@ -3,68 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lecture 2</title>
+    <title>Lecture 3</title>
+    <!--first way to do css-->
+    <style>
+        .butt{/*class name*/
+            background-color: rgb(148, 109, 32);/*color palate to select color*/
+            color: #0fa00f/*hexcode for color*/
+        }
+
+        /*change color on hover */
+        a:hover{
+            color: red;
+        }
+
+        /* change color after the link is visited */
+        a:visited{
+            color: green; /*it comes under pseudoclass */
+        }
+    </style>
+    <!--margin(outer area) , border , padding(inner area(space between border and content))-->
 </head>
 <body>
-    <video width = "320" height = "240"controls >
-        <source src="C:\Users\harsh\Downloads\Stacks and Queues Complete Tutorial - Theory + Implementation + Types (Dynamic, Circular).mp4" type="video/mp4">
-        Your browser does not support the video<!--when video does not play-->
-    </video>
-    <audio controls><!--controls for controls-->
-        <source src="C:\Users\harsh\Music\Bol Do Na Zara - Armaan Malik.m4a" type="audio/mpeg">
-        Your browser does not support audio
-    </audio>
-   
-    <header><!--used to create header for document or section-->
-        <nav>
-            <a href="index.html">Home</a><!--open index.html file-->
-            <a href="contact.html">About</a>
-        </nav><!--we can place multiple links in navigation tag-->
-        <nav>
-            <a href="#home">Home</a><!--hum jis pr click karege uss section pr pohoch jayege-->
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="home" class="blue"><!--defining different sections , it is optional-->
-        <h1>Home Section</h1>
-        <p>myself Harshul Sengar</p>
-    </section>
-    <section id="about" class="red">
-        <h2>About Us</h2>
-        <p>I am in GLA University</p>
-    </section>
-    <section id="contact" class="green">
-        <h2>Contact Us</h2>
-        <p>Here's how you can reach me</p>
-    </section>
-    <details><!--details and summary to write something under a topic-->
-        <summary>Additional information</summary>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur in natus ad hic eos facilis obcaecati similique id ex debitis!</p>
+    <h1>CSS</h1>
+    <button class="butt">Button</button>
+    <div style="margin:20px">This div has a margin of 20px</div><!--inline styling-->
 
-    </details>
-
-    <main><!--optional-->
-       <iframe src="index.html" frameborder="0"></iframe><!--iframe1-->
-       <iframe 
-       name = "contentFrame"
-       src="index.html"
-       width="100%"
-       height="500px"
-       frameborder="10">
-    </iframe>
-    <iframe
-    width="420"
-    height="315"
-    src="https://www.youtube.com/embed/n3FWuLpp6rg?si=qQyRsVYXz8Q6ErQU"
-    ></iframe>
-    <!--for youtube video go to embedded video and then copy url from src-->
-    </main>
-    <!--mark for highlight text-->
-    <p>Lorem ipsum <mark> dolor, sit amet </mark>markconsectetur adipisicing elit. Quidem nobis soluta nesciunt accusantium voluptas nulla voluptatem recusandae laboriosam maiores unde.</p>
-
-    <footer><!--define footer for a document or section-->
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, culpa.</p>
-    </footer>
-</body>
+    <a href="#link">Hover over this link</a>
+    
 </html>

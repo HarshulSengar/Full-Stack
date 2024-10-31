@@ -1,0 +1,39 @@
+.box{
+    width: 150px;
+    height: 150px;
+    margin: 25px;
+    display: inline-block;
+    color: aquamarine;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    line-height: 100px;
+    text-align: center;
+}
+
+/* Skew transformation along X-axis */
+.skewX{
+    background-color: red;
+    transform: skewX(30deg);/* tilts the element by 30 deg along x-axis */
+}
+
+/* Skew transformation along the Y-axis */
+.skewY {
+    background-color: blue;
+    transform: skewY(
+      20deg
+    ); /* Tilts the element by 20 degrees along the Y-axis */
+}
+
+ /* Combined skew transformations along both X and Y axes */
+ .skewXY {
+    background-color: green;
+    transform: skewX(20deg) skewY(20deg); /* Applies both transformations */
+}
+
+/* Skew transformation in opposite directions on X and Y axes */
+.skewOpposite {
+    background-color: purple;
+    transform: skewX(20deg) skewY(-20deg); /* X axis skews 20deg right, Y axis 20deg left */
+  }
+
+

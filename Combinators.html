@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+    <style>
+        /*Descendant combinator - targets <p> inside <div> */
+        div p{
+            color :aquamarine ;
+        }
+
+        /* Child combinator - targets direct <p> children of <div> */
+        div > p{
+            color: goldenrod;
+        }
+
+        /* Adjacent sibling combinator - targets <p> immediately following <h1> */
+        h1 + p{
+            color: plum;
+        }
+
+        /* General sibling combinator - targets all <p> siblings of <h1> */
+        h1 ~ p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <h1>Heading</h1>
+   <p>Paragraph below heading</p>
+   <p>another paragraph</p>
+   <div>
+    <p>paragraph inside div</p>
+    <p>another paragraph inside div</p>
+   </div> 
+</body>
+</html>
