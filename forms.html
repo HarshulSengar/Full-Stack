@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<body>
+  <!--Text Input-->
+  <form >
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <!--<input type="text"> used to create a text input field-->
+  </form>
+   <form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+   </form>
+
+   <!--password input-->
+   <form>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+   </form>
+
+   <!--radio buttons-->
+   <form>
+    <input type="radio" id="Radhika" name="Radhika" value="1">
+    <label for="Radhika">Radhika</label>
+    <br>
+    <input type="radio" id="Shivani" name="Shivani" value="2">
+    <label for="Shivani">Shivani</label>
+    <br>
+
+   </form>
+   <!--TextArea , used to create a multi-line text input field-->
+   <form>
+    <label for="comments">Comments:</label>
+    <br>
+    <textarea name="comments" id="comments" rows="5" cols="30"></textarea>
+   </form>
+
+   <!--Select Dropdown-->
+   <!--<Select> used to create a dropdown list-->
+    <br>
+    <br>
+    <form>
+      <label for="dropdown">Choose correct option:</label>
+      <select name="dropdown" id="dropdown">
+      <option value="1">pizza</option>
+      <option value="2">burger</option>
+      <option value="3">paw bhaji</option>
+      <option value="4">dosa</option>
+      <option value="5">chaowmin</option>
+      </select>
+    </form>
+    <br>
+    <br>
+    <!--button to create clickable button-->
+    <form>
+      <button type="submit">Submit</button>
+    </form>
+    <!--upload files-->
+    <form>
+      <label for="file">Upload a file:</label>
+      <input type="file" id="file" name="file">
+    </form>
+
+    <!--date input-->
+    <form>
+      <label for="date">Choose a date:</label>
+      <input type="date" id="date" name="date">
+    </form>
+
+</body>
+</html>
